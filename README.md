@@ -1,13 +1,13 @@
 # Nexor_12 client downloads
 
-## Latest: 0.1.9
+## Latest: 0.1.10
 
-Download **nexor_12-client-0.1.9.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21. Remove the previous BlackVolt/Nexor JAR before installing it in the instance's `mods` folder. Existing settings carry over.
+Download **nexor_12-client-0.1.10.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21. Remove the previous BlackVolt/Nexor JAR before putting this one in the instance's `mods` folder. Saved settings carry over.
 
-This patch protects spawner observations from dense block-target cache eviction and draws spawner overlays first. The actual loaded block under the crosshair is checked independently of chunk block-entity lists.
+This build directly observes successfully rendered monster/trial-spawner block entities. A spawner the client is already drawing can reach ESP independently of chunk queues, crosshair reach, or registry block-state classification. Recent render observations survive background reconciliation.
 
-If a spawner is missing, aim directly at it, then open **Right Shift → right-click Spawner ESP → Targets → Spawner status / rescan**. Ensure **Spawner ESP: ON**. The screen shows cached/in-range counts and actual targeted block ID, can rescan nearby chunks, and has **Copy status** for reporting. Spawner Notifier alone does not enable the overlay. The exact reported public-server issue is not yet confirmed.
+The live local test used a cobblestone/mossy room with adjacent chests and a nearby spawner. The spawner had a red outline; status confirmed 80 rendered-spawner observations and the actual minecraft:spawner state. This verifies the new render observation path, not the user's exact public-server setup.
 
-Includes Flight, Staff List, ore-only X-ray, full Storage ESP selectors and player-plus-Freecam scan areas. Servers may reject Flight; hidden staff/blocks cannot be inferred. Scan/cache/render limits apply.
+Right Shift → right-click Spawner ESP → Targets → Spawner status / rescan shows cached/in-range counts, rendered-spawner checks and rendered state. Spawner ESP must be ON. Includes Flight, Staff List, ore-only X-ray and Storage ESP selectors. Loaded-world/render limits apply; hidden data is not inferred.
 
-The build, 51 core checks and both helper tests pass. Internal mod ID/config stays `blackvolt`. Older versions remain available; install only one. SHA-256 hashes are in `SHA256SUMS`.
+Fabric build, 51 core checks and both helper tests pass. Internal ID/config remains `blackvolt`. Older versions remain available; install only one. SHA-256 hashes are in `SHA256SUMS`.
