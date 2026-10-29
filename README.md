@@ -1,17 +1,15 @@
-# BlackVolt SMP downloads
+# Nexor_12 client downloads
 
-## Latest: 0.1.5
+## Latest: 0.1.6
 
-Download **blackvolt-smp-0.1.5.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21. Remove your previous BlackVolt JAR, then put the new JAR in the instance's `mods` folder.
+Download **nexor_12-client-0.1.6.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21.
+Remove your previous BlackVolt/Nexor JAR before installing this one in the instance's `mods` folder. Existing profiles and keybinds remain compatible.
 
-Version 0.1.5 fixes Freecam A/D strafing (A left, D right) and duplicate chest overlays when the same block is selected through multiple ESP lists. Neighboring chest blocks remain distinct.
+- Renamed visible GUI, HUD, notifications, and mod name to **Nexor_12 client**.
+- **Staff List** shows staff present in the server player list using visible ranks and manually configured usernames. It cannot detect hidden or vanished staff.
+- **Right Shift → right-click Staff List → Targets → Staff usernames** lets you add comma-separated names. Move the panel through Edit HUD; toggle or bind the module normally.
+- Existing ore-only X-ray, searchable Storage ESP block/item targets, and Freecam fixes remain included.
 
-**Right Shift → right-click a module → Targets**:
+The build, 45 core checks, and both helper tests pass. A local Minecraft check confirmed visible Admin-rank detection and renamed HUD text. Public-server rank formatting may require configured usernames.
 
-- **X-ray → Select blocks:** ores and ore/mineral blocks only. Ordinary blocks, containers, and spawners are excluded. Older profiles reset once to all ore/mineral targets; later chosen subsets save normally.
-- **Storage ESP → Select blocks / Select items:** searchable complete registries. Select placed blocks or dropped items to highlight independently of Block ESP and Item ESP. Extra lists start empty.
-- **Storage types:** existing container selection, separate from extra blocks/items. Storage Counter counts selected containers.
-
-Settings save automatically. Includes offscreen arrows, General keybind controls, and Visual color sliders. Loaded-world scan/cache/render budgets still apply. Older JARs remain available; install only one version at a time.
-
-Build, 44 core checks, and both helper tests pass. SHA-256 hashes are in `SHA256SUMS`.
+The internal mod ID/config folder remains `blackvolt` for compatibility. Older versions remain available. SHA-256 hashes are in `SHA256SUMS`.
