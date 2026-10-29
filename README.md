@@ -1,16 +1,15 @@
 # BlackVolt SMP downloads
 
-## Latest: 0.1.3
+## Latest: 0.1.4
 
-Download **blackvolt-smp-0.1.3.jar**. Requires Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API for **1.21.11**, and Java 21. Remove the old BlackVolt JAR and put this JAR in the instance's `mods` folder.
+Download **blackvolt-smp-0.1.4.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21. Remove your previous BlackVolt JAR, then put the new JAR in the instance's `mods` folder.
 
-Press **Right Shift**, right-click a module, then open **Targets**:
+**Right Shift → right-click a module → Targets**:
 
-- **X-ray / Block ESP → Select blocks:** search all registered blocks, toggle targets, or click **Add all ores**.
-- **Item ESP → Select items:** search all registered items. Turn on **Selected items only** to apply the chosen list; off shows all dropped items.
-- Pickers support All entries / Selected only, Add/Remove matches, pagination, and Clear selection. Include installed mod entries. Settings save automatically.
-- ESP targets remain during background rescans and have offscreen arrows when you look away. Arrows can be disabled in target settings.
+- **X-ray → Select blocks:** ores and ore/mineral blocks only. Ordinary blocks, containers, and spawners are excluded. Older profiles reset once to all ore/mineral targets; later chosen subsets save normally.
+- **Storage ESP → Select blocks / Select items:** searchable complete registries. Select placed blocks or dropped items to highlight independently of Block ESP and Item ESP. Extra lists start empty.
+- **Storage types:** existing container selection, separate from extra blocks/items. Storage Counter counts selected containers.
 
-General still has enable/keybind controls; Visual has color sliders. Old profiles remain compatible. Old JAR versions remain available; install only one BlackVolt version at a time.
+Settings save automatically. Includes offscreen arrows, General keybind controls, and Visual color sliders. Loaded-world scan/cache/render budgets still apply. Older JARs remain available; install only one version at a time.
 
-The Fabric build, 40 core checks, and two helper tests pass. Registry search, ore selection, and ESP turning were checked in Minecraft. Scan/cache/render limits still apply, and only loaded-world data is used. SHA-256 hashes are in `SHA256SUMS`.
+Build, 42 core checks, and both helper tests pass. SHA-256 hashes are in `SHA256SUMS`.
