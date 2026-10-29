@@ -1,13 +1,13 @@
 # Nexor_12 client downloads
 
-## Latest: 0.1.8
+## Latest: 0.1.9
 
-Download **nexor_12-client-0.1.8.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21. Remove the previous BlackVolt/Nexor JAR before putting this one in the instance's `mods` folder.
+Download **nexor_12-client-0.1.9.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API **1.21.11**, and Java 21. Remove the previous BlackVolt/Nexor JAR before installing it in the instance's `mods` folder. Existing settings carry over.
 
-- Fixes the 0.1.7 Freecam range regression: spawner/ESP scanning and range now retain both the player area and active camera area.
-- Adds **Flight** under Movement. WASD moves your actual player; Space rises, Left Shift descends. Bind a key in General and adjust Flight speed in Targets. It suspends during Freecam and starts disabled after startup/profile/world changes. Servers may reject flight.
-- Includes Staff List, ore-only X-ray, full Storage ESP block/item selectors, and previous Freecam/duplicate-label fixes.
+This patch protects spawner observations from dense block-target cache eviction and draws spawner overlays first. The actual loaded block under the crosshair is checked independently of chunk block-entity lists.
 
-Right Shift opens the GUI; right-click modules for settings. Existing profiles carry over. Loaded-world scan/cache/render limits apply; unseen server data is unavailable. The internal mod ID/config folder stays `blackvolt` for compatibility.
+If a spawner is missing, aim directly at it, then open **Right Shift → right-click Spawner ESP → Targets → Spawner status / rescan**. Ensure **Spawner ESP: ON**. The screen shows cached/in-range counts and actual targeted block ID, can rescan nearby chunks, and has **Copy status** for reporting. Spawner Notifier alone does not enable the overlay. The exact reported public-server issue is not yet confirmed.
 
-The build, 50 core checks and both helper tests pass. Older versions remain available; install only one version. SHA-256 hashes are in `SHA256SUMS`.
+Includes Flight, Staff List, ore-only X-ray, full Storage ESP selectors and player-plus-Freecam scan areas. Servers may reject Flight; hidden staff/blocks cannot be inferred. Scan/cache/render limits apply.
+
+The build, 51 core checks and both helper tests pass. Internal mod ID/config stays `blackvolt`. Older versions remain available; install only one. SHA-256 hashes are in `SHA256SUMS`.
