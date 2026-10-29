@@ -1,19 +1,17 @@
 # BlackVolt SMP downloads
 
-## Latest: 0.1.1
+## Latest: 0.1.2
 
-Download **blackvolt-smp-0.1.1.jar**. Requires Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API for **1.21.11**, and Java 21. Remove your previous BlackVolt JAR, then put the new JAR in your Fabric instance's `mods` folder. In Modrinth App, open the instance folder to find `mods`.
+Download **blackvolt-smp-0.1.2.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API for **1.21.11**, and Java 21.
+Remove your previous BlackVolt JAR and place the new JAR in your instance's `mods` folder.
 
-### Set up keybinds
+Press **Right Shift**, then right-click a module for Meteor-inspired customization:
 
-1. Enter a world and press **Right Shift**.
-2. Right-click any module, click **Bind key**, and press your chosen key.
-3. **Clear**, Delete, or Backspace removes a binding. Escape cancels capture. Right Shift stays reserved for opening the GUI.
+- **General:** enable and keybind/clear controls; Escape cancels binding, Delete clears. Right Shift stays reserved for the menu.
+- **Visual:** RGB sliders and a live color preview.
+- **Targets:** relevant sliders, switches, and identifier filters. These use the existing shared values, as labeled.
+- **Storage ESP → Targets → Storage types:** search containers, toggle individual types, or select all/none. All/None affects every type, including hidden search results.
 
-### Choose Storage ESP targets
+Settings save automatically in profiles. Existing profiles remain compatible. Storage selection controls outlines, tracers, alerts, and counts.
 
-Right-click **Storage ESP**, then click **Storage types**. Select the containers you want: chests, barrels, shulkers, hoppers, individual furnace types, and more. Use **Select all**, **Select none**, and the page button. Choices apply to storage outlines, tracers, alerts, and the counter, and save with keybinds in your profiles.
-
-Version 0.1.1 passed 34 core checks and live GUI/keybind/barrels-only checks. The older 0.1.0 JAR remains available on this branch. Install only one BlackVolt version at a time.
-
-This is a client-only mod. Do not install it on a dedicated server. Public-server anti-cheat compatibility is not certified. Windows, audible sounds, and authenticated multiplayer have not been fully tested. SHA-256 download hashes are in `SHA256SUMS`.
+Version 0.1.2 passed 37 core checks, both helper tests, the Fabric build, and live Minecraft menu/search checks. Older JAR versions remain available; install only one version at a time. SHA-256 hashes are in `SHA256SUMS`.
