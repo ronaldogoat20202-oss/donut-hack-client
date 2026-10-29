@@ -1,17 +1,16 @@
 # BlackVolt SMP downloads
 
-## Latest: 0.1.2
+## Latest: 0.1.3
 
-Download **blackvolt-smp-0.1.2.jar** for Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API for **1.21.11**, and Java 21.
-Remove your previous BlackVolt JAR and place the new JAR in your instance's `mods` folder.
+Download **blackvolt-smp-0.1.3.jar**. Requires Minecraft Java **1.21.11**, Fabric Loader **0.17.3 or compatible newer**, Fabric API for **1.21.11**, and Java 21. Remove the old BlackVolt JAR and put this JAR in the instance's `mods` folder.
 
-Press **Right Shift**, then right-click a module for Meteor-inspired customization:
+Press **Right Shift**, right-click a module, then open **Targets**:
 
-- **General:** enable and keybind/clear controls; Escape cancels binding, Delete clears. Right Shift stays reserved for the menu.
-- **Visual:** RGB sliders and a live color preview.
-- **Targets:** relevant sliders, switches, and identifier filters. These use the existing shared values, as labeled.
-- **Storage ESP → Targets → Storage types:** search containers, toggle individual types, or select all/none. All/None affects every type, including hidden search results.
+- **X-ray / Block ESP → Select blocks:** search all registered blocks, toggle targets, or click **Add all ores**.
+- **Item ESP → Select items:** search all registered items. Turn on **Selected items only** to apply the chosen list; off shows all dropped items.
+- Pickers support All entries / Selected only, Add/Remove matches, pagination, and Clear selection. Include installed mod entries. Settings save automatically.
+- ESP targets remain during background rescans and have offscreen arrows when you look away. Arrows can be disabled in target settings.
 
-Settings save automatically in profiles. Existing profiles remain compatible. Storage selection controls outlines, tracers, alerts, and counts.
+General still has enable/keybind controls; Visual has color sliders. Old profiles remain compatible. Old JAR versions remain available; install only one BlackVolt version at a time.
 
-Version 0.1.2 passed 37 core checks, both helper tests, the Fabric build, and live Minecraft menu/search checks. Older JAR versions remain available; install only one version at a time. SHA-256 hashes are in `SHA256SUMS`.
+The Fabric build, 40 core checks, and two helper tests pass. Registry search, ore selection, and ESP turning were checked in Minecraft. Scan/cache/render limits still apply, and only loaded-world data is used. SHA-256 hashes are in `SHA256SUMS`.
